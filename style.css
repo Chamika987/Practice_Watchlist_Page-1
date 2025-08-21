@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("abstract-textured-backgound.jpg");
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: #04AA6D;
+  transform: scale(1.1);
+}
+
+nav .active {
+  background-color: #111;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .card img {
+    width: 100%;
+    display: block;
+  }
+
+  .card-text {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .card-text h4 {
+    margin: 10px 0 5px;
+  }
+
+  .card-text p {
+    margin: 0;
+    color: #555;
+  }
+
+  .payNow {
+    border-radius: 10px;
+    width: 6.5em;
+    height: 2em;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addCart {
+    border-radius: 10px;
+    width: 6.5em;
+    height: 2em;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: #04AA6D;
+    border: none;
+    cursor: pointer;
+  }
+
+  .payNow:hover {
+    transform: scale(1.1);
+  }
+
+  .addCart:hover {
+    transform: scale(1.1);
+  }
+}
